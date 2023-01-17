@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
-export const StyledHome = styled.div`
-width: 60%;
+export const Container = styled.main`
+width: 750px;
 display:flex;
 justify-content: space-between;
-background-color: #FFFFFF;
-border: 1px solid #D1DCE3;
+border: 1px solid var(--grey-1);
 border-radius: 4px;
-`
+`;

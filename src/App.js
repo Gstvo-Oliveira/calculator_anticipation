@@ -1,11 +1,25 @@
-import Main from "./pages/mainPage";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
+import MainPage from "./pages/mainPage";
 
-const App = () =>{
+function App() {
   return (
-    <div className="App">
-    <Main/>
-    </div>
+    <>
+    
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+      <MainPage />
+    </>
   );
 }
 
