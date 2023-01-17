@@ -5,7 +5,7 @@ import { api } from "../../api/api";
 
 import { NumericFormat } from "react-number-format";
 
-import { StyledForm } from "./style";
+import { StyledForm, StyledSection } from "./style";
 
 const FormSimulation = () => {
 
@@ -50,8 +50,10 @@ const FormSimulation = () => {
   };
 
   return (
+<StyledSection>
+    <h2>Simule sua Antecipação</h2>
     <StyledForm onSubmit={(e) => submitTeste(e)}>
-      <h2>Simule sua Antecipação</h2>
+      
       <label>
         Informe o valor da venda *
         <NumericFormat
@@ -68,9 +70,9 @@ const FormSimulation = () => {
         Em quantas parcelas *
         <input
           required
-          placeholder= "Até 12 parcelas"
           onChange={(e) => setUser({ ...user, installments: e.target.value })}
         />
+        <span>Máximo de 12 parcelas</span>
       </label>
       <label>
         Informe o percentual de MDR *
@@ -82,12 +84,13 @@ const FormSimulation = () => {
       <label>
         Informar dias a serem calculados (opcional)
         <input
-          placeholder="Ex: 10-30-40"
           onChange={(e) => setUser({ ...user, days: e.target.value })}
         />
+        <span>Ex: 10-30-40</span>
       </label>
       <button type="submit">Simular</button>
-    </StyledForm>
+      </StyledForm>
+      </StyledSection>
   );
 };
 export default FormSimulation;

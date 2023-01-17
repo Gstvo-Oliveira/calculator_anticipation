@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const StyledHome = styled.div`
-width: 800px;
+width: 60%;
 display:flex;
 justify-content: space-between;
-background-color: white;
-box-shadow: 9px 10px 0px -1px rgba(0,0,0,1);
-border: 1px solid black;
-border-radius: 10px;
+background-color: #FFFFFF;
+border: 1px solid #D1DCE3;
+border-radius: 4px;
 `

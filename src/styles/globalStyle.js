@@ -12,12 +12,10 @@ body, html{
 .App{
   height: 100vh;
   width: 100vw;
-  background-color: grey;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #333333;
-
+  background-color: #F2F2F2;
 }
 
 `

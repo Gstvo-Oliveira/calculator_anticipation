@@ -9,12 +9,12 @@ const AmountReceivable = () => {
 
   return (
     <ListStyled>
-      <h3>Você Receberá:</h3>
+      <h3>VOCÊ RECEBERÁ:</h3>
       <ul>
         {Object.keys(answer).map((item, index) => (
           <li key={index}>
-            {item == 1 ? "- Amanhã" : `- Em ${item} dias`}: R${" "}
-            {answer[item].toLocaleString("pt-BR") + ",00"}
+            {item == 1 ? "- Amanhã" : `- Em ${item} dias`}: <span>R${" "}
+            {answer[item].toLocaleString("pt-BR") + ",00"}</span>
           </li>
         ))}
       </ul>
