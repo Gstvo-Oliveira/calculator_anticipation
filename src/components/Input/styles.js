@@ -1,26 +1,31 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  label {
-    color: var(--grey-3);
+font-size: 12px;
+
+  section {
+    opacity: 0.7;
     font-family: "SourceSansPro", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     text-align: left;
+    
   }
 
   .error {
-    font-size: 14px;
+    font-size: 8px;
     color: var(--red);
     font-weight: 700;
   }
 
   .max {
     height: 25px;
-    font-size: 14px;
-    color: var(--white-3);
+    font-size: 10px;
     font-weight: 700;
   }
 
+  
+
+  
 `;
 
 export const Context = styled.section`

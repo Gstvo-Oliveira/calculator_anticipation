@@ -5,11 +5,12 @@ const Input = ({ label, register, name, error, span, ...rest }) => {
     <Container>
       <section>
         {label} {!!error && <span className="error">{error}</span>}
-      </section>
+      
       <Context isError={!!error}>
-        <input {...register(name)} {...rest} />
+          <input  {...register(name)} {...rest} />
       </Context>
-      <span className="max">{span}</span>
+        <span className="max">{span}</span>
+        </section>
     </Container>
   );
 }
