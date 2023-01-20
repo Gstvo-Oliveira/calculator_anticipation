@@ -12,12 +12,14 @@ export const CalculatorProvider = ({ children }) => {
   const [delay, setDelay] = useState(false);
 
   const insertCalculation = (data) => {
+    
     calculator
       .post("", data)
       .then((response) => {
         setCalculation(response.data);
       })
       .catch((err) => {
+        console.log(err)
         toast(" ❌ Ocorreu um erro, por favor tente novamente mais tarde", {
           className: "toastify-color-progress-error",
         });

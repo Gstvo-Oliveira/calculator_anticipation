@@ -32,3 +32,32 @@ export const Container = styled.section`
 
   
 `;
+export const InputBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  label {
+    font-size: 14px;
+    color: var(--gray-3);
+  }
+  input {
+    width: 251px;
+    height: 20px;
+    padding-left: 8px;
+    font-size: 14px;
+    line-height: 16px;
+    color: black;
+    background: var(--white-1);
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+  }
+  input:focus {
+    background: var(--white-1);
+    border: 1px solid var(--blue-1);
+    border-radius: 4px;
+  }
+  p {
+    font-size: 11px;
+    line-height: 13px;
+    color: var(--white-3);
+  }
+`;
